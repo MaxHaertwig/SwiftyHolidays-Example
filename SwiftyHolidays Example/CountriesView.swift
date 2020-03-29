@@ -6,10 +6,16 @@ struct CountriesView: View {
         NavigationView {
             List(Country.allCases, id: \.self) { country in
                 NavigationLink(destination: CountryView(country: country)) {
-                    Text(country.displayString())
+                    Text(self.emojiFlag(iso2Code: country.iso2Code) + " " + country.displayString())
                 }
             }
             .navigationBarTitle("Holidays")
+        }
+    }
+    
+    private func emojiFlag(iso2Code: String) -> String {
+        return iso2Code.uppercased().unicodeScalars.reduce("") { acc, us in
+            return acc + String(UnicodeScalar(127397 + us.value)!)
         }
     }
 }
