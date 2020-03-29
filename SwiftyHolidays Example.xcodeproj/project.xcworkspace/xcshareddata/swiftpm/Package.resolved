@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftyHolidays",
+        "repositoryURL": "https://github.com/MaxHaertwig/SwiftyHolidays.git",
+        "state": {
+          "branch": null,
+          "revision": "d02b4e3e5be14f6eb788802da554f424cdb2a834",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
