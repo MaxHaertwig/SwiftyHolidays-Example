@@ -46,7 +46,7 @@
 		D3B38CE724309EA8003EE6E7 = {
 			isa = PBXGroup;
 			children = (
-				D3B38CF224309EA8003EE6E7 /* SwiftyHolidays Example */,
+				D3B38CF224309EA8003EE6E7 /* SwiftyHolidays-Example */,
 				D3B38CF124309EA8003EE6E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,7 +59,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3B38CF224309EA8003EE6E7 /* SwiftyHolidays Example */ = {
+		D3B38CF224309EA8003EE6E7 /* SwiftyHolidays-Example */ = {
 			isa = PBXGroup;
 			children = (
 				D3B38CF324309EA8003EE6E7 /* AppDelegate.swift */,
@@ -72,7 +72,7 @@
 				D3B38CFE24309EA9003EE6E7 /* LaunchScreen.storyboard */,
 				D3B38D0124309EA9003EE6E7 /* Info.plist */,
 			);
-			path = "SwiftyHolidays Example";
+			path = "SwiftyHolidays-Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D3B38CEB24309EA8003EE6E7 /* Build configuration list for PBXProject "SwiftyHolidays Example" */;
+			buildConfigurationList = D3B38CEB24309EA8003EE6E7 /* Build configuration list for PBXProject "SwiftyHolidays-Example" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -294,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftyHolidays Example/Info.plist";
+				INFOPLIST_FILE = "SwiftyHolidays-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftyHolidays Example/Info.plist";
+				INFOPLIST_FILE = "SwiftyHolidays-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3B38CEB24309EA8003EE6E7 /* Build configuration list for PBXProject "SwiftyHolidays Example" */ = {
+		D3B38CEB24309EA8003EE6E7 /* Build configuration list for PBXProject "SwiftyHolidays-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3B38D0224309EA9003EE6E7 /* Debug */,
