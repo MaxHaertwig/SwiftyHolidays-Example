@@ -4,13 +4,13 @@ import SwiftyHolidays
 struct CountryView: View {
     let country: Country
     
-    private var yearFormatter: NumberFormatter = {
+    private static let yearFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()
         numberFormatter.groupingSeparator = ""
         return numberFormatter
     }()
     
-    private var dateFormatter: DateFormatter = {
+    private static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
@@ -26,19 +26,20 @@ struct CountryView: View {
     var body: some View {
         List {
             Stepper(value: $year, in: 1...3000) {
-                Text("Year: \(year as NSNumber, formatter: yearFormatter)")
+                Text("Year: \(year as NSNumber, formatter: Self.yearFormatter)")
             }
-            Section(header: Text("Holidays")) {
+            Section(header: Text("Holidays".uppercased())) {
                 ForEach(country.allHolidays(in: year), id: \.name) { holiday in
                     HStack {
                         Text(holiday.name)
                         Spacer()
-                        Text("\(holiday.date.asDate(in: .current), formatter: self.dateFormatter)")
+                        Text("\(holiday.date.asDate(in: .current), formatter: Self.dateFormatter)")
                             .foregroundColor(.secondary)
                     }
                 }
             }
         }
+        .listStyle(GroupedListStyle())
         .navigationBarTitle(Text(country.displayString()), displayMode: .inline)
     }
 }

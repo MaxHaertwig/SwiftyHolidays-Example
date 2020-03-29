@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3836EEE243140690057DC69 /* DateCheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3836EED243140690057DC69 /* DateCheckerView.swift */; };
+		D3836EF0243147470057DC69 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3836EEF243147470057DC69 /* Extensions.swift */; };
 		D3A8D97A2430A0E4008103ED /* SwiftyHolidays in Frameworks */ = {isa = PBXBuildFile; productRef = D3A8D9792430A0E4008103ED /* SwiftyHolidays */; };
 		D3B38CF424309EA8003EE6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B38CF324309EA8003EE6E7 /* AppDelegate.swift */; };
 		D3B38CF624309EA8003EE6E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B38CF524309EA8003EE6E7 /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3836EED243140690057DC69 /* DateCheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCheckerView.swift; sourceTree = "<group>"; };
+		D3836EEF243147470057DC69 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D3B38CF024309EA8003EE6E7 /* SwiftyHolidays Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftyHolidays Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B38CF324309EA8003EE6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B38CF524309EA8003EE6E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +65,9 @@
 				D3B38CF324309EA8003EE6E7 /* AppDelegate.swift */,
 				D3B38CF524309EA8003EE6E7 /* SceneDelegate.swift */,
 				D3B38CF724309EA8003EE6E7 /* CountriesView.swift */,
+				D3836EED243140690057DC69 /* DateCheckerView.swift */,
 				D3B38D0724309FC0003EE6E7 /* CountryView.swift */,
+				D3836EEF243147470057DC69 /* Extensions.swift */,
 				D3B38CF924309EA9003EE6E7 /* Assets.xcassets */,
 				D3B38CFE24309EA9003EE6E7 /* LaunchScreen.storyboard */,
 				D3B38D0124309EA9003EE6E7 /* Info.plist */,
@@ -145,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3836EF0243147470057DC69 /* Extensions.swift in Sources */,
 				D3B38CF424309EA8003EE6E7 /* AppDelegate.swift in Sources */,
+				D3836EEE243140690057DC69 /* DateCheckerView.swift in Sources */,
 				D3B38CF624309EA8003EE6E7 /* SceneDelegate.swift in Sources */,
 				D3B38CF824309EA8003EE6E7 /* CountriesView.swift in Sources */,
 				D3B38D0824309FC0003EE6E7 /* CountryView.swift in Sources */,

@@ -4,18 +4,20 @@ import SwiftyHolidays
 struct CountriesView: View {
     var body: some View {
         NavigationView {
-            List(Country.allCases, id: \.self) { country in
-                NavigationLink(destination: CountryView(country: country)) {
-                    Text(self.emojiFlag(iso2Code: country.iso2Code) + " " + country.displayString())
+            List {
+                NavigationLink(destination: DateCheckerView()) {
+                    Text("Date Checker")
+                }
+                Section(header: Text("Countries".uppercased())) {
+                    ForEach(Country.allCases, id: \.self) { country in
+                        NavigationLink(destination: CountryView(country: country)) {
+                            Text(country.displayStringWithFlag)
+                        }
+                    }
                 }
             }
+            .listStyle(GroupedListStyle())
             .navigationBarTitle("Holidays")
-        }
-    }
-    
-    private func emojiFlag(iso2Code: String) -> String {
-        return iso2Code.uppercased().unicodeScalars.reduce("") { acc, us in
-            return acc + String(UnicodeScalar(127397 + us.value)!)
         }
     }
 }
