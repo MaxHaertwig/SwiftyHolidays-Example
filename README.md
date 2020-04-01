@@ -2,6 +2,8 @@
 
 This example project demonstrates how to use [SwiftyHolidays](https://github.com/MaxHaertwig/SwiftyHolidays), a library that hepls to determine whether a date is a holiday in a given country.
 
+![Screenshots](./Screenshots.png)
+
 ## Usage
 
 Open [SwiftyHolidays-Example.xcodeproj](https://github.com/MaxHaertwig/SwiftyHolidays-Example/blob/master/SwiftyHolidays-Example.xcodeproj).
