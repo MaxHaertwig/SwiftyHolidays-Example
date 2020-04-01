@@ -40,6 +40,7 @@ struct DateCheckerView: View {
                 }
             }
         }
+        .environment(\.timeZone, country.defaultTimeZone)
         .listStyle(GroupedListStyle())
         .navigationBarTitle("Date Checker", displayMode: .inline)
     }
